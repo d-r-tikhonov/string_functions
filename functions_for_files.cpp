@@ -1,26 +1,5 @@
 #include <stdio.h>
-
-
-char * my_fgets(char * string, int num, FILE * filestream);
-
-
-int main()
-{
-	FILE * ptrFile = fopen("file.txt" , "r");
-
-	char mystring [100];
- 
-  	if (ptrFile == NULL) 
-  		printf("Error opening files!\n");
-   	else
-   	{
-    	if (my_fgets(mystring, 100, ptrFile) != NULL)
-    		puts(mystring); 
-    	fclose (ptrFile);
-   	}
-
-	return 0;
-}
+#include "functions_for_files.h"
 
 char * my_fgets(char * string, int num, FILE * filestream)
 {	

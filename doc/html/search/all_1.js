@@ -1,0 +1,15 @@
+var searchData=
+[
+  ['main_0',['main',['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cpp']]],
+  ['main_2ecpp_1',['main.cpp',['../main_8cpp.html',1,'']]],
+  ['my_5ffgets_2',['my_fgets',['../functions__for__files_8cpp.html#a7947f6ed518e274ca1beb64418d7906a',1,'my_fgets(char *string, int num, FILE *filestream):&#160;functions_for_files.cpp'],['../functions__for__files_8h.html#a7947f6ed518e274ca1beb64418d7906a',1,'my_fgets(char *string, int num, FILE *filestream):&#160;functions_for_files.cpp']]],
+  ['my_5fgetline_3',['my_getline',['../string__f_8cpp.html#a4c72e44713e1e67c5b13b535fec0a367',1,'my_getline(char *buffer, int num, char separator):&#160;string_f.cpp'],['../string__f_8h.html#a4c72e44713e1e67c5b13b535fec0a367',1,'my_getline(char *buffer, int num, char separator):&#160;string_f.cpp']]],
+  ['my_5fputs_4',['my_puts',['../string__f_8cpp.html#a613f18cc4b2e7c9aa4464df1431e8f66',1,'my_puts(const char *str):&#160;string_f.cpp'],['../string__f_8h.html#a7e2b20d5be522723536c660a5fd33112',1,'my_puts(const char *string):&#160;string_f.cpp']]],
+  ['my_5fstrcat_5',['my_strcat',['../string__f_8cpp.html#a70d049df1320e559d970fc55b283eca7',1,'my_strcat(char *destptr, const char *srcptr):&#160;string_f.cpp'],['../string__f_8h.html#a70d049df1320e559d970fc55b283eca7',1,'my_strcat(char *destptr, const char *srcptr):&#160;string_f.cpp']]],
+  ['my_5fstrchr_6',['my_strchr',['../string__f_8cpp.html#a4279885c3cffa4b3458e81a1fdc8f522',1,'my_strchr(const char *str, int ch):&#160;string_f.cpp'],['../string__f_8h.html#a4279885c3cffa4b3458e81a1fdc8f522',1,'my_strchr(const char *str, int ch):&#160;string_f.cpp']]],
+  ['my_5fstrcpy_7',['my_strcpy',['../string__f_8cpp.html#a491c12196e2f7d9929cf777284c72931',1,'my_strcpy(char *destination, const char *source):&#160;string_f.cpp'],['../string__f_8h.html#a491c12196e2f7d9929cf777284c72931',1,'my_strcpy(char *destination, const char *source):&#160;string_f.cpp']]],
+  ['my_5fstrdup_8',['my_strdup',['../string__f_8cpp.html#a81582262a332624a470adcc11c409fdd',1,'my_strdup(const char *str):&#160;string_f.cpp'],['../string__f_8h.html#a81582262a332624a470adcc11c409fdd',1,'my_strdup(const char *str):&#160;string_f.cpp']]],
+  ['my_5fstrlen_9',['my_strlen',['../string__f_8cpp.html#af2f145304414f93f65d2035c25e76e86',1,'my_strlen(const char *str):&#160;string_f.cpp'],['../string__f_8h.html#af2f145304414f93f65d2035c25e76e86',1,'my_strlen(const char *str):&#160;string_f.cpp']]],
+  ['my_5fstrncat_10',['my_strncat',['../string__f_8cpp.html#ac7351e4b7aa487bb3282f94550773f79',1,'my_strncat(char *destptr, char *srcptr, int num):&#160;string_f.cpp'],['../string__f_8h.html#ac7351e4b7aa487bb3282f94550773f79',1,'my_strncat(char *destptr, char *srcptr, int num):&#160;string_f.cpp']]],
+  ['my_5fstrncpy_11',['my_strncpy',['../string__f_8cpp.html#a831cec78dc3b009ce24e520552c4c02f',1,'my_strncpy(char *destptr, const char *srcptr, int num):&#160;string_f.cpp'],['../string__f_8h.html#a831cec78dc3b009ce24e520552c4c02f',1,'my_strncpy(char *destptr, const char *srcptr, int num):&#160;string_f.cpp']]]
+];
