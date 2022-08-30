@@ -124,10 +124,6 @@ size_t my_getline (char **string, size_t *n, FILE *stream)
 		*string = (char*) calloc(1, sizeof(char));
 		*n = 1;
 	}
-	else
-	{
-		*string = (char*) realloc(*string, *n * sizeof(char));
-	}
 
 	while( (incomingSymbol = getc(stream)) != '\n' && incomingSymbol != EOF )
 	{
@@ -137,13 +133,13 @@ size_t my_getline (char **string, size_t *n, FILE *stream)
 
 		if (counterMass >= *n)
 		{
-			*string = (char*) realloc(*string, counterMass * sizeof(char));
-			*n = counterMass;
+			*n = counterMass + 1;
+			*string = (char*) realloc(*string, *n * sizeof(char));
 		}
 
 	}
 
-	string[counterMass + 1] = '\0';
+	(*string)[counterMass] = '\0';
 
 	return *n;
 }
