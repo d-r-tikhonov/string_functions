@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 #include "functions_for_files.h"
 
 char * my_fgets(char * string, int num, FILE * filestream)

@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+
 #include "string_f.h"
 #include "functions_for_files.h"
 
@@ -36,6 +38,11 @@ int main()
    	printf("Example for my_strdup(), return: %d\n", istr);
    	printf("Example for my_strdup(), result: %s\n", istr);
    	printf("%p, %p\n", new_str, istr);
+
+    char *str_test = nullptr;
+    size_t n = 0;
+    printf("%d\n", my_getline(&str_test, &n, stdin));
+    printf("%s\n", str_test);
 
     FILE * ptrFile = fopen("file.txt" , "r");
 

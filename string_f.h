@@ -60,10 +60,10 @@ char * my_strdup(const char *str);
 
 	
 /// \brief				It is used to receive an input string from the user in one or more lines until a special character (separator) appears.
-/// \param buffer 		C-string for incoming characters
-/// \param num 			Number of characters
-/// \param separator 	Separator character
+/// \param string 		This is a double pointer to an array of characters. This indicates the location of the initial character of the character array.
+/// \param n 			Number of characters
+/// \param stream 		The stream from which the file will be read
 /// \return 			Pointer to the string with the result.
-char * my_getline(char* buffer, int num, char separator);
+size_t my_getline (char **string, size_t *n, FILE *stream);
 
 #endif

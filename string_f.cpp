@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
 #include "string_f.h"
 
 
@@ -110,15 +111,39 @@ char * my_strdup(const char *str)
 	return new_str;
 }
 
-char * my_getline(char * buffer, int num, char separator)
+size_t my_getline (char **string, size_t *n, FILE *stream)
 {
-	for (unsigned i = 0; i < num; i++)
+	char incomingSymbol = 0;
+	unsigned counterMass = 0;
+
+	if (stream == nullptr || string == nullptr || n == 0)
+		return -1;
+
+	if (*string == nullptr)
 	{
-		if (buffer[i] = separator)
-			break;
-		buffer[i] = getchar();
-		buffer[i + 1] = '\0'; 
+		*string = (char*) calloc(1, sizeof(char));
+		*n = 1;
+	}
+	else
+	{
+		*string = (char*) realloc(*string, *n * sizeof(char));
 	}
 
-	return buffer;
+	while( (incomingSymbol = getc(stream)) != '\n' && incomingSymbol != EOF )
+	{
+		(*string)[counterMass] = incomingSymbol; 
+
+		counterMass++;
+
+		if (counterMass >= *n)
+		{
+			*string = (char*) realloc(*string, counterMass * sizeof(char));
+			*n = counterMass;
+		}
+
+	}
+
+	string[counterMass + 1] = '\0';
+
+	return *n;
 }
